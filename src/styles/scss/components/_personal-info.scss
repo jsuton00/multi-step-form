@@ -1,0 +1,65 @@
+.personal-info {
+	&-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: $spacing-base;
+		width: 100%;
+		height: 100%;
+		padding: $spacing-base;
+
+		&-title {
+			font-weight: $ubuntu-bold;
+			color: $marineBlue;
+		}
+		&-text {
+			color: $coolGray;
+		}
+		&-input-section {
+			display: flex;
+			flex-direction: column;
+			gap: $spacing-xxs;
+		}
+		&-label {
+			color: $marineBlue;
+		}
+		&-input {
+			border: $spacing-primary solid $lightGray;
+			border-radius: $spacing-sm;
+			padding: $spacing-sm $spacing-lg;
+
+			&::-webkit-input-placeholder {
+				font-weight: $ubuntu-bold;
+				color: $coolGray;
+			}
+
+			&::-moz-placeholder {
+				font-weight: $ubuntu-bold;
+				color: $coolGray;
+			}
+
+			&:-ms-input-placeholder {
+				font-weight: $ubuntu-bold;
+				color: $coolGray;
+			}
+
+			&::-ms-input-placeholder {
+				font-weight: $ubuntu-bold;
+				color: $coolGray;
+			}
+
+			&::placeholder {
+				font-weight: $ubuntu-bold;
+				color: $coolGray;
+			}
+		}
+		&-submit-section {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			width: 100%;
+			padding: $spacing-sm 0;
+		}
+	}
+}

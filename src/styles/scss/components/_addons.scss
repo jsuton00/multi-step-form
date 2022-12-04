@@ -1,0 +1,49 @@
+.addons {
+	&-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: $spacing-xxl;
+		width: 100%;
+		height: 100%;
+		padding: $spacing-base;
+
+		&-title {
+			font-weight: $ubuntu-bold;
+			color: $marineBlue;
+		}
+		&-text {
+			color: $coolGray;
+		}
+		&-checkbox {
+			&-list {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: $spacing-base;
+				width: 100%;
+				height: 100%;
+
+				&-item {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: $spacing-base;
+					padding: $spacing-base;
+					border: $spacing-primary solid $lightGray;
+					border-radius: $spacing-sm;
+				}
+			}
+			&-price {
+				color: $purplishBlue;
+				margin-left: auto;
+			}
+			&-title {
+				font-weight: $ubuntu-bold;
+			}
+			&-description {
+				color: $coolGray;
+			}
+		}
+	}
+}
